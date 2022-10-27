@@ -1,3 +1,3 @@
 This repository is prepared for Advanced IoT (Master1/2) classes.
 
-It contains the presentations for lectures, the presentation of Smart IoT Labs of different scope, the codes, and the cusomized microPython firmwares for different typoes of ESP boards: ESP32, ESP32s2, ESP32c3, ESP32s3.
+It contains the presentations for lectures and the presentations of Smart IoT Labs of different scope. We provide the codes and the customized microPython firmware for different types of ESP boards including: ESP32, ESP32s2, ESP32c3, ESP32s3.
