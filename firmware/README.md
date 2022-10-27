@@ -1,5 +1,5 @@
 
-The microPython firmware may be installed - flashed with the following scripts:
+The microPython firmware with all additional drivers may be installed - flashed with the following scripts:
 
 for **ESP32**:
 
