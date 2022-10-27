@@ -1,5 +1,6 @@
 
 The microPython firmware may be installed - flashed with the following scripts:
+
 for **ESP32**:
 
 **esptool.py --chip esp32 --port /dev/ttyUSB0 erase_flash**
