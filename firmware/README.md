@@ -1,4 +1,9 @@
 
+The **latest stable esptool** release can be installed from PyPI via pip:
+
+**$ pip install esptool**
+
+
 The microPython firmware with all additional drivers may be installed - flashed with the following scripts:
 
 for **ESP32**:
