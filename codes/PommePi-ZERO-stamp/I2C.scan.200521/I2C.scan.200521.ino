@@ -1,0 +1,25 @@
+#include "Wire.h"
+
+void setup() {
+  Serial.begin(9600);
+  Wire.begin(7,8);   // SDA, SCL for mini D1 plus
+}
+
+void loop() {
+  byte error, address;
+  int nDevices = 0;
+  delay(5000);
+   Serial.println();
+   Serial.println("Scanning for I2C devices ...");
+  for(address = 0x01; address < 0x7f; address++){
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+    if (error == 0){
+      Serial.printf("I2C device found at address 0x%02X\n", address);
+      nDevices++;
+    } else if(error != 2){
+      Serial.printf("Error %d at address 0x%02X\n", error, address);
+    }
+  }
+  if (nDevices == 0) Serial.println("No I2C devices found");
+}
